@@ -1,12 +1,97 @@
-# React + Vite
+🕹 React GTA Six Landing Page 🚗💨
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A visually dynamic landing page inspired by GTA VI, built with React, GSAP, Vite & Tailwind.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🔥 Features
 
-## Expanding the ESLint configuration
+🌀 Animated SVG intro mask powered by GSAP
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+🖱 Parallax & interactive mouse effects
+
+🧩 GTA-style visuals with custom fonts & assets
+
+💨 Tailwind CSS for responsive styling
+
+🎮 Remixicon integration for gaming-themed icons
+
+
+
+---
+
+⚙ Getting Started
+
+✅ Prerequisites
+
+Node.js (v18+ recommended)
+
+npm
+
+
+
+---
+
+📥 Installation
+
+git clone <your-repo-url>
+cd react-gta-six
+npm install
+
+
+---
+
+🛠 Development
+
+npm run dev
+
+Open in browser: http://localhost:5173
+
+
+---
+
+📦 Build
+
+npm run build
+
+
+---
+
+🔍 Preview Production Build
+
+npm run preview
+
+
+---
+
+📁 Project Structure
+
+react-gta-six/
+├── public/            # 🎨 Static assets: images, fonts
+├── src/               # ⚛ Components, animations, logic
+│   ├── App.jsx        # 🧠 Main layout + intro animation
+│   └── assets/        # 📸 Images, SVG masks
+├── vite.config.js     # ⚙ Vite + Tailwind setup
+├── eslint.config.js   # 📏 Code linting rules
+
+
+---
+
+🎨 Customization Tips
+
+🖼 Replace images in public/ for your own city, cars, or vibe
+
+🎨 Edit Tailwind classes or App.css to change the look
+
+🎬 Tweak the intro mask animation in App.jsx for new effects
+
+🔤 Swap in your own GTA-style font or add cool transitions
+
+
+
+---
+
+📜 License
+
+🛑 This project is for educational and demonstration purposes only.
+Inspired by Rockstar Games, no assets or names are used commercially.
