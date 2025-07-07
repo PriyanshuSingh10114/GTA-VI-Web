@@ -170,14 +170,12 @@ function App() {
             <h1 className='text-4xl'>Still Running,</h1>
             <h1 className='text-4xl'>Not Hunting</h1>
             
-            <p className='mt-10 text-xl font-[Helvetica_Now_Display]'>Lorem ipsum dolor sit amet consectetur adipisicing elit.Odit modi 
-              harum facilis, accusamus magni aut, sint ad molestias 
-              nesciunt hic doloribus? Laudantium adipisci sunt illum ipsa vel eaque non consequatur.
+            <p className='mt-10 text-xl font-[Helvetica_Now_Display]'>Grand Theft Auto VI is set to return to the neon-soaked streets of Vice City, Rockstar’s Miami-inspired open world, with rumors suggesting an expanded map including surrounding swamps and smaller towns.
+              <br />
+              <br />
+              The game will reportedly feature dual protagonists—Lucia, the franchise’s first female lead, and Jason male partner—in a crime-driven storyline reminiscent of Bonnie & Clyde.
             </p>
-            <p className='mt-10 text-xl font-[Helvetica_Now_Display]'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam non molestias
-              pariatur dicta dignissimos explicabo distinctio delectus voluptatum deserunt,
-              inventore illo provident, suscipit, quos corrupti sed facere sit magnam alias!
-              Ut facilis dolore placeat facere nesciunt eos odio quis amet.
+            <p className='mt-10 text-xl font-[Helvetica_Now_Display]'>While Rockstar has confirmed a 2026 release, platforms remain unconfirmed, and anticipation continues to build as players dissect every frame of available footage for hidden clues. Until official details emerge, much of the hype remains fueled by insider leaks and community theories.
             </p>
             <a href="https://www.rockstargames.com/" target="_blank" rel="">
             <button className="bg-yellow-500 absolute px-6 py-6 text-2xl text-black mt-8">
