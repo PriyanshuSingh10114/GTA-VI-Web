@@ -40,7 +40,7 @@ function App() {
     gsap.to(".main",{
       scale:1,
       rotate:0,
-      duartion:2,
+      duration:2,
       delay:"-0.2",
       ease:"Expo.easeInOut",
     });
@@ -48,7 +48,7 @@ function App() {
     gsap.to(".sky",{
       scale:1.1,
       rotate:0,
-      duartion:2,
+      duration:2,
       delay:"-0.6",
       ease:"Expo.easeInOut",
     });
@@ -56,7 +56,7 @@ function App() {
     gsap.to(".bg",{
       scale:1.1,
       rotate:0,
-      duartion:2,
+      duration:2,
       delay:"-0.6",
       ease:"Expo.easeInOut",
     });
@@ -160,6 +160,67 @@ function App() {
         </div>
       )}
 
+
+      <section className="relative w-full px-[8%] lg:px-[12%] py-[80px] bg-[#0b0b0b] overflow-hidden">
+
+        {/* Background gradients */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/40 to-[#111] z-0" />
+        <div className="absolute left-[-120px] top-[200px] w-[420px] h-[420px] bg-[#f5b754]/10 rounded-full blur-3xl" />
+        <div className="absolute right-[-150px] bottom-[150px] w-[380px] h-[380px] bg-[#f5b754]/10 rounded-full blur-3xl" />
+
+        {/* Heading */}
+        <div className="relative text-center z-15 mb-20">
+          <p className="uppercase text-lg tracking-[10px] text-[#f5b754] mb-5">
+            Vice City Moments
+          </p>
+          <h2 className="text-4xl md:text-5xl font-bold font-bricolage text-white mb-6">
+            Vice City <span className="text-[#f5b754]">Gallery</span>
+          </h2>
+        </div>
+
+        {/* Gallery Scroll */}
+        <div className="relative z-10 overflow-x-auto no-scrollbar">
+          <div className="flex gap-10 w-max pb-10">
+
+            {[
+              { img: "./img_1.png", title: "Neon Streets" },
+              { img: "./img_2.png", title: "High-Speed Chase" },
+              { img: "./img_3.png", title: "Vice City Beach" },
+              { img: "./img_4.png", title: "City Sky view" },
+              { img: "./img_5.png", title: "Criminals Hideout"},
+            ].map((item, i) => (
+              <div
+                key={i}
+                className="group relative min-w-[500px] h-[360px] rounded-3xl overflow-hidden cursor-pointer shadow-lg shadow-black/40
+                transition-all duration-700 hover:-translate-y-2 hover:shadow-[#f5b754]/30"
+              >
+                {/* Image */}
+                <img
+                  src={item.img}
+                  alt={item.title}
+                  className="w-full h-full object-cover scale-110 group-hover:scale-125 transition-transform duration-700 ease-out"
+                />
+
+                {/* Overlay */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent opacity-70 group-hover:opacity-90 transition-opacity duration-500" />
+
+                {/* Title */}
+                <h3 className="absolute top-6 left-6 text-white text-2xl font-semibold font-bricolage tracking-wide
+                  group-hover:text-[#f5b754] transition-colors duration-500 drop-shadow-lg">
+                  {item.title}
+                </h3>
+
+                {/* Bottom glow line */}
+                <div className="absolute bottom-0 left-0 w-full h-[4px] bg-gradient-to-r from-transparent via-[#f5b754] to-transparent
+                  opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+
+
       <div className="w-full h-screen flex px-10 items-center justify-center bg-black">
         <div className='cntnr flex text-white w-full h-[80%]'>
 
@@ -182,9 +243,7 @@ function App() {
             Download Now
             </button>
             </a>
-
           </div>
-
         </div>
       </div>
     </div>
